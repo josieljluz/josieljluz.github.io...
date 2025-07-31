@@ -1,17 +1,14 @@
-name: 🚀 CI/CD Pipeline & Manual Deploy
+name: "🚀 Deployment + Atualização Automática"
 
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   schedule:
-    - cron: '1 0 * * *'    # Diariamente às 00:01 BRT
-    - cron: '30 0 * * *'   # Diariamente às 00:30 BRT (redundância)
-  workflow_dispatch:       # Permite execução manual
+    - cron: '0 3 * * *'  # Executa diariamente às 00:00 BRT (03:00 UTC)
+  workflow_dispatch:
 
 env:
-  TZ: America/Sao_Paulo
+  TZ: America/Fortaleza
 
 permissions:
   contents: write
@@ -19,97 +16,47 @@ permissions:
   id-token: write
 
 jobs:
-  # Job 1: Setup e geração de metadados
-  setup:
+  download_and_update:
     runs-on: ubuntu-latest
-    container: node:14
-    outputs:
-      metadata: ${{ steps.set-metadata.outputs.metadata }}
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Cache node modules
-        uses: actions/cache@v4
+      - name: "🔽 Checkout do repositório"
+        uses: actions/checkout@v4
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          fetch-depth: 0  # Necessário para operações git posteriores
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Generate metadata
-        run: node generate_metadata.js
-
-      - name: Upload metadata artifact
-        uses: actions/upload-artifact@v4
+      - name: "🐍 Configurar Python"
+        uses: actions/setup-python@v4
         with:
-          name: files_metadata
-          path: files_metadata.json
-          retention-days: 1
+          python-version: '3.8'
 
-      - name: Set metadata output
-        id: set-metadata
-        run: echo "metadata=$(cat files_metadata.json | base64 -w 0)" >> $GITHUB_OUTPUT
-
-  # Job 2: Download de playlists com Python
-  download:
-    needs: setup
-    runs-on: ubuntu-latest
-    container: python:3.8
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install requests
+      - name: "⚙️ Instalar dependências"
         run: pip install requests
 
-      - name: Run playlists script
-        run: python playlists.py
+      - name: "📥 Baixar playlists"
+        run: python playlists_update.py
 
-      - name: Upload playlist artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: playlists
-          path: |
-            *.m3u
-            *.xml.gz
-          retention-days: 7
+      - name: "📊 Gerar metadados"
+        run: node generate_metadata.js
 
-  # Job 3: Build do site/front-end
-  build:
-    needs: [setup, download]
-    runs-on: ubuntu-latest
-    container: node:14
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: artifacts
-
-      - name: Copy downloaded files
+      - name: "💾 Commit e push das alterações"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ls -la artifacts/
-          cp -r artifacts/** ./ || true
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add .
+          git commit -m "🔄 Atualização automática - $(date +'%d/%m/%Y %H:%M')" || echo "Sem alterações para commit"
+          
+          # Sincroniza com o remoto e faz push seguro
+          git pull origin main --rebase
+          git push origin main
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-output
-          path: |
-            *.html
-            *.css
-            *.js
-            *.json
-            *.m3u
-            *.xml.gz
-          retention-days: 7
+      - name: "📂 Listar arquivos"
+        run: ls -la
 
-  # Job 4: Deploy para GitHub Pages
   deploy:
-    needs: [setup, download, build]
+    needs: download_and_update
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -117,43 +64,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download all artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: artifacts
-
-      - name: Prepare public directory
+      - name: "🏗️ Preparar arquivos para deploy"
         run: |
           mkdir -p public
-          # Copia todos os arquivos relevantes para public
-          find artifacts -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.json" -o -name "*.m3u" -o -name "*.xml.gz" \) -exec cp {} public/ \;
-          # Garante que tudo foi copiado
-          ls -la public/
+          cp -r *.html *.js *.json *.m3u *.xml.gz public/
 
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: "🚀 Deploy no GitHub Pages"
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy: ${{ github.sha }}'
-          full_commit_message: 'Deploy to GitHub Pages: ${{ github.sha }}'
-
-  # Job 5: Disparar manualmente o deploy (opcional - pode ser removido se não for útil)
-  trigger-deploy:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Trigger GitHub Pages build manually
-        run: |
-          curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.GH_DEPLOY_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/${{ github.repository }}/actions/workflows/pages-build-deployment.yml/dispatches \
-            -d '{"ref":"main"}'
-        env:
-          GH_DEPLOY_TOKEN: ${{ secrets.GH_DEPLOY_TOKEN }}
+          force_orphan: true  # Garante histórico limpo
+    
