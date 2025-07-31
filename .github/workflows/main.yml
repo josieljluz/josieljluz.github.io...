@@ -1,5 +1,3 @@
-# .github/workflows/main.yml
-
 name: 🔄 Workflows Combinados (Limpeza, Deploy, Exclusão)
 
 # Não coloque 'on' aqui no nível raiz para evitar conflitos
