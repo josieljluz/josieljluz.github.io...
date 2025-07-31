@@ -1,4 +1,4 @@
-name: "🚀 Deployment + Atualização Automática"
+name: "💾 Deployment Atualização Automática"
 
 on:
   push:
