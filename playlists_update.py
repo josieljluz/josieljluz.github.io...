@@ -4,17 +4,17 @@ from datetime import datetime
 
 # URLs das playlists (substitua pelas suas URLs reais)
 PLAYLIST_URLS = [
-    "epgbrasil.m3u": "http://m3u4u.com/m3u/3wk1y24kx7uzdevxygz7",
-    "epgbrasil.xml.gz": "http://m3u4u.com/epg/3wk1y24kx7uzdevxygz7",
-    "epgbrasilportugal.m3u": "http://m3u4u.com/m3u/782dyqdrqkh1xegen4zp",
-    "epgbrasilportugal.xml.gz": "http://m3u4u.com/epg/782dyqdrqkh1xegen4zp",
-    "epgportugal.m3u": "http://m3u4u.com/m3u/jq2zy9epr3bwxmgwyxr5",
-    "epgportugal.xml.gz": "http://m3u4u.com/epg/jq2zy9epr3bwxmgwyxr5",
-    "m3u@proton.me.m3u": "https://gitlab.com/josieljefferson12/playlists/-/raw/main/m3u4u_proton.me.m3u",
-    "PiauiTV.m3u": "https://gitlab.com/josieljefferson12/playlists/-/raw/main/PiauiTV.m3u",
-    "playlist.m3u": "https://gitlab.com/josieljefferson12/playlists/-/raw/main/playlist.m3u",
-    "playlists.m3u": "https://gitlab.com/josielluz/playlists/-/raw/main/playlists.m3u",
-    "pornstars.m3u": "https://gitlab.com/josieljefferson12/playlists/-/raw/main/pornstars.m3u"
+    "http://m3u4u.com/m3u/3wk1y24kx7uzdevxygz7",
+    "http://m3u4u.com/epg/3wk1y24kx7uzdevxygz7",
+    "http://m3u4u.com/m3u/782dyqdrqkh1xegen4zp",
+    "http://m3u4u.com/epg/782dyqdrqkh1xegen4zp",
+    "http://m3u4u.com/m3u/jq2zy9epr3bwxmgwyxr5",
+    "http://m3u4u.com/epg/jq2zy9epr3bwxmgwyxr5",
+    "https://gitlab.com/josieljefferson12/playlists/-/raw/main/m3u4u_proton.me.m3u",
+    "https://gitlab.com/josieljefferson12/playlists/-/raw/main/PiauiTV.m3u",
+    "https://gitlab.com/josieljefferson12/playlists/-/raw/main/playlist.m3u",
+    "https://gitlab.com/josielluz/playlists/-/raw/main/playlists.m3u",
+    "https://gitlab.com/josieljefferson12/playlists/-/raw/main/pornstars.m3u"
 ]
 
 def download_file(url, filename):
