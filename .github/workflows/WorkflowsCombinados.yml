@@ -74,19 +74,30 @@ jobs:
 
   # ✅ 2. JOB: Limpar Execuções Antigas
   cleanup:
-    name: 🧹 Limpar Execuções de Workflow Antigas (1h)
+    name: 🧹 Limpar Execuções de Workflow Antigas (12h)
     runs-on: ubuntu-latest
     permissions:
       actions: write
 
-    # Executa a cada 12h (01:00 e 13:00 UTC)
-    if: >-
-      github.event.inputs.force_job == 'cleanup' ||
-      (github.event_name == 'schedule' && 
-      contains('1 */12 * * *', github.event.schedule))
-
     steps:
+      - name: 🔍 Verificar se é hora de executar o cleanup
+        id: check_time
+        run: |
+          # Obtém a hora atual em UTC
+          current_hour=$(date -u +%H)
+          current_min=$(date -u +%M)
+
+          # O cron é '1 */12 * * *' → 00:01 e 12:01 UTC
+          if [[ "$current_hour" == "00" && "$current_min" == "01" ]] || \
+             [[ "$current_hour" == "12" && "$current_min" == "01" ]] || \
+             [[ "${{ github.event.inputs.force_job }}" == "cleanup" ]]; then
+            echo "run_cleanup=true" >> $GITHUB_ENV
+          else
+            echo "run_cleanup=false" >> $GITHUB_ENV
+          fi
+
       - name: 🗑️ Deletar execuções de workflow antigas
+        if: env.run_cleanup == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -101,7 +112,7 @@ jobs:
             runs=$(gh api \
               -H "Accept: application/vnd.github.v3+json" \
               "/repos/${{ github.repository }}/actions/runs?per_page=$per_page&page=$page" \
-              --jq '.workflow_runs[] | {id, created_at, status}')
+              --jq '.workflow_runs[] | {id, created_at}')
 
             if [ -z "$runs" ]; then
               echo "✅ Nenhuma execução encontrada na página $page. Fim da paginação."
@@ -112,6 +123,7 @@ jobs:
               id=$(echo "$run" | jq -r '.id')
               created_at=$(echo "$run" | jq -r '.created_at')
 
+              # Converter data para timestamp (compatível com Linux e macOS)
               if date -u -d "$created_at" >/dev/null 2>&1; then
                 run_date=$(date -u -d "$created_at" +%s)
               elif date -u -j -f "%Y-%m-%dT%H:%M:%SZ" "$created_at" >/dev/null 2>&1; then
@@ -139,8 +151,7 @@ jobs:
           done
 
           echo "🏁 Processo concluído. Total de execuções deletadas: $deleted"
-
-
+          
   # ✅ 3. JOB: Disparar Deploy Manual para GitHub Pages
   deploy:
     name: 🚀 Disparar Deploy Manual para GitHub Pages
