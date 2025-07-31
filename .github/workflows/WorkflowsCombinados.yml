@@ -1,7 +1,18 @@
-name: 🔄 Workflows Combinados (Limpeza, Deploy, Exclusão)
+name: 🔄 Workflows Combinados (Exclusão, Limpeza, Deploy)
 
-# Não coloque 'on' aqui no nível raiz para evitar conflitos
-# Cada job será definido com seu próprio gatilho dentro de 'jobs'
+on:
+  schedule:
+    # Executa a cada hora para verificar se algum job precisa rodar
+    - cron: '0 * * * *'  # Toda hora, no minuto 0
+  workflow_dispatch:  # Permite execução manual
+    inputs:
+      force_job:
+        description: 'Forçar execução de um job específico (delete|cleanup|deploy)'
+        required: false
+        default: ''
+
+env:
+  TZ: America/Fortaleza
 
 jobs:
   # ✅ 1. JOB: Excluir Arquivos da Raiz
@@ -11,10 +22,11 @@ jobs:
     permissions:
       contents: write
 
-    on:
-      schedule:
-        - cron: '0 15 * * *'  # Executa às 12h BRT (15h UTC)
-      workflow_dispatch:
+    # Executa apenas se for 15h UTC (12h BRT)
+    if: >-
+      github.event.inputs.force_job == 'delete' ||
+      (github.event_name == 'schedule' && 
+      ${{ github.event.schedule == '0 15 * * *' }})
 
     steps:
       - name: ⏰ Configurar fuso horário
@@ -56,21 +68,22 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add .
-          git commit -m "🗑️ Excluir arquivos via GitHub Actions (agendado)" || echo "Nada a commitar"
+          git commit -m "🗑️ Excluir arquivos via GitHub Actions" || echo "Nada a commitar"
           git push https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git HEAD:main
 
 
-  # ✅ 2. JOB: Limpar Execuções de Workflow Antigas
+  # ✅ 2. JOB: Limpar Execuções Antigas
   cleanup:
     name: 🧹 Limpar Execuções de Workflow Antigas (1h)
     runs-on: ubuntu-latest
     permissions:
       actions: write
 
-    on:
-      schedule:
-        - cron: '1 */12 * * *'  # A cada 12h no minuto 1
-      workflow_dispatch:
+    # Executa a cada 12h (01:00 e 13:00 UTC)
+    if: >-
+      github.event.inputs.force_job == 'cleanup' ||
+      (github.event_name == 'schedule' && 
+      contains('1 */12 * * *', github.event.schedule))
 
     steps:
       - name: 🗑️ Deletar execuções de workflow antigas
@@ -133,13 +146,12 @@ jobs:
     name: 🚀 Disparar Deploy Manual para GitHub Pages
     runs-on: ubuntu-latest
     environment: production
-    env:
-      TZ: America/Fortaleza
 
-    on:
-      workflow_dispatch:
-      schedule:
-        - cron: '25 10 * * *'  # 10h UTC = 7h BRT
+    # Executa às 10h25 UTC (7h25 BRT)
+    if: >-
+      github.event.inputs.force_job == 'deploy' ||
+      (github.event_name == 'schedule' && 
+      ${{ github.event.schedule == '25 10 * * *' }})
 
     steps:
       - name: Executar deploy do pages-build-deployment
