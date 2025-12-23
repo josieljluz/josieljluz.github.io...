@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2025-12-22T04:05:42.177Z",
-    "next_update": "2025-12-23T04:05:42.177Z",
+    "generated_at": "2025-12-23T04:00:22.776Z",
+    "next_update": "2025-12-24T04:00:22.776Z",
     "m3u_count": 6,
     "epg_count": 3,
     "total_files": 9
@@ -11,55 +11,55 @@
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 639053,
-      "updated": "2025-12-22T04:05:34.755Z"
+      "updated": "2025-12-23T04:00:11.547Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
-      "size": 879112,
-      "updated": "2025-12-22T04:05:35.893Z"
+      "size": 855981,
+      "updated": "2025-12-23T04:00:12.944Z"
     },
     {
       "name": "epgbrasilportugal.m3u",
       "type": "m3u",
       "size": 6875,
-      "updated": "2025-12-22T04:05:36.925Z"
+      "updated": "2025-12-23T04:00:15.013Z"
     },
     {
       "name": "epgbrasilportugal.xml.gz",
       "type": "epg",
-      "size": 112361,
-      "updated": "2025-12-22T04:05:38.045Z"
+      "size": 111727,
+      "updated": "2025-12-23T04:00:15.892Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
       "size": 2262390,
-      "updated": "2025-12-22T04:05:39.172Z"
+      "updated": "2025-12-23T04:00:18.010Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
-      "size": 1946732,
-      "updated": "2025-12-22T04:05:40.287Z"
+      "size": 1944656,
+      "updated": "2025-12-23T04:00:19.095Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2025-12-22T04:05:40.585Z"
+      "updated": "2025-12-23T04:00:19.747Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2025-12-22T04:05:40.714Z"
+      "updated": "2025-12-23T04:00:20.367Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2025-12-22T04:05:41.043Z"
+      "updated": "2025-12-23T04:00:20.764Z"
     }
   ]
 }
