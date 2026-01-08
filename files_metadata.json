@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-01-04T04:12:14.379Z",
-    "next_update": "2026-01-05T04:12:14.379Z",
+    "generated_at": "2026-01-08T04:02:47.719Z",
+    "next_update": "2026-01-09T04:02:47.719Z",
     "m3u_count": 6,
     "epg_count": 3,
     "total_files": 9
@@ -11,55 +11,55 @@
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 639053,
-      "updated": "2026-01-04T04:12:06.169Z"
+      "updated": "2026-01-08T04:02:38.227Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
-      "size": 268771,
-      "updated": "2026-01-04T04:12:07.363Z"
+      "size": 785040,
+      "updated": "2026-01-08T04:02:40.318Z"
     },
     {
       "name": "epgbrasilportugal.m3u",
       "type": "m3u",
       "size": 6875,
-      "updated": "2026-01-04T04:12:08.295Z"
+      "updated": "2026-01-08T04:02:41.287Z"
     },
     {
       "name": "epgbrasilportugal.xml.gz",
       "type": "epg",
-      "size": 105726,
-      "updated": "2026-01-04T04:12:09.283Z"
+      "size": 93254,
+      "updated": "2026-01-08T04:02:42.323Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
-      "size": 2262390,
-      "updated": "2026-01-04T04:12:10.405Z"
+      "size": 2262699,
+      "updated": "2026-01-08T04:02:43.906Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
-      "size": 1892344,
-      "updated": "2026-01-04T04:12:11.788Z"
+      "size": 1768944,
+      "updated": "2026-01-08T04:02:45.036Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-01-04T04:12:12.094Z"
+      "updated": "2026-01-08T04:02:45.438Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-01-04T04:12:12.269Z"
+      "updated": "2026-01-08T04:02:45.703Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-01-04T04:12:12.585Z"
+      "updated": "2026-01-08T04:02:46.175Z"
     }
   ]
 }
