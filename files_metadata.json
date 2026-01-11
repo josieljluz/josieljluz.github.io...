@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-01-09T04:02:58.310Z",
-    "next_update": "2026-01-10T04:02:58.310Z",
+    "generated_at": "2026-01-11T04:11:27.530Z",
+    "next_update": "2026-01-12T04:11:27.530Z",
     "m3u_count": 6,
     "epg_count": 3,
     "total_files": 9
@@ -11,55 +11,55 @@
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 639053,
-      "updated": "2026-01-09T04:02:50.508Z"
+      "updated": "2026-01-11T04:11:20.946Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
-      "size": 839497,
-      "updated": "2026-01-09T04:02:52.091Z"
+      "size": 853984,
+      "updated": "2026-01-11T04:11:21.992Z"
     },
     {
       "name": "epgbrasilportugal.m3u",
       "type": "m3u",
-      "size": 68797,
-      "updated": "2026-01-09T04:02:53.285Z"
+      "size": 68322,
+      "updated": "2026-01-11T04:11:23.255Z"
     },
     {
       "name": "epgbrasilportugal.xml.gz",
       "type": "epg",
-      "size": 53580,
-      "updated": "2026-01-09T04:02:54.444Z"
+      "size": 51543,
+      "updated": "2026-01-11T04:11:24.033Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
       "size": 2262699,
-      "updated": "2026-01-09T04:02:55.727Z"
+      "updated": "2026-01-11T04:11:25.285Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
-      "size": 1856857,
-      "updated": "2026-01-09T04:02:57.090Z"
+      "size": 1923248,
+      "updated": "2026-01-11T04:11:26.363Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-01-09T04:02:57.493Z"
+      "updated": "2026-01-11T04:11:26.766Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-01-09T04:02:57.720Z"
+      "updated": "2026-01-11T04:11:27.002Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-01-09T04:02:58.133Z"
+      "updated": "2026-01-11T04:11:27.386Z"
     }
   ]
 }
