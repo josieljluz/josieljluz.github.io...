@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-03-13T04:47:19.270Z",
-    "next_update": "2026-03-14T04:47:19.270Z",
+    "generated_at": "2026-03-14T04:45:13.193Z",
+    "next_update": "2026-03-15T04:45:13.193Z",
     "m3u_count": 6,
     "epg_count": 3,
     "total_files": 9
@@ -11,55 +11,55 @@
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 639053,
-      "updated": "2026-03-13T04:47:09.515Z"
+      "updated": "2026-03-14T04:45:06.255Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
-      "size": 822829,
-      "updated": "2026-03-13T04:47:10.674Z"
+      "size": 804603,
+      "updated": "2026-03-14T04:45:07.579Z"
     },
     {
       "name": "epgbrasilportugal.m3u",
       "type": "m3u",
-      "size": 68322,
-      "updated": "2026-03-13T04:47:11.991Z"
+      "size": 215,
+      "updated": "2026-03-14T04:45:08.746Z"
     },
     {
       "name": "epgbrasilportugal.xml.gz",
       "type": "epg",
-      "size": 49251,
-      "updated": "2026-03-13T04:47:13.306Z"
+      "size": 992,
+      "updated": "2026-03-14T04:45:09.954Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
-      "size": 2262699,
-      "updated": "2026-03-13T04:47:14.499Z"
+      "size": 215,
+      "updated": "2026-03-14T04:45:10.981Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
-      "size": 1912283,
-      "updated": "2026-03-13T04:47:15.745Z"
+      "size": 992,
+      "updated": "2026-03-14T04:45:12.140Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-03-13T04:47:16.102Z"
+      "updated": "2026-03-14T04:45:12.449Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-03-13T04:47:16.279Z"
+      "updated": "2026-03-14T04:45:12.629Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-03-13T04:47:16.574Z"
+      "updated": "2026-03-14T04:45:13.010Z"
     }
   ]
 }
