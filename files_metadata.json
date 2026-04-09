@@ -1,65 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-04-09T05:12:44.933Z",
-    "next_update": "2026-04-10T05:12:44.933Z",
-    "m3u_count": 6,
+    "generated_at": "2026-04-09T05:14:56.821Z",
+    "next_update": "2026-04-10T05:14:56.821Z",
+    "m3u_count": 8,
     "epg_count": 3,
-    "total_files": 9
+    "total_files": 11
   },
   "files": [
+    {
+      "name": "PiauiTV.m3u",
+      "type": "m3u",
+      "size": 76895,
+      "updated": "2026-04-09T05:14:38.999Z"
+    },
     {
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 639053,
-      "updated": "2026-04-09T05:12:36.077Z"
+      "updated": "2026-04-09T05:14:50.030Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
       "size": 765780,
-      "updated": "2026-04-09T05:12:37.455Z"
+      "updated": "2026-04-09T05:14:51.260Z"
     },
     {
       "name": "epgbrasilportugal.m3u",
       "type": "m3u",
       "size": 2321344,
-      "updated": "2026-04-09T05:12:38.940Z"
+      "updated": "2026-04-09T05:14:52.691Z"
     },
     {
       "name": "epgbrasilportugal.xml.gz",
       "type": "epg",
       "size": 1533891,
-      "updated": "2026-04-09T05:12:40.625Z"
+      "updated": "2026-04-09T05:14:53.927Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
       "size": 2262699,
-      "updated": "2026-04-09T05:12:41.775Z"
+      "updated": "2026-04-09T05:14:55.391Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
       "size": 1125422,
-      "updated": "2026-04-09T05:12:42.909Z"
+      "updated": "2026-04-09T05:14:56.309Z"
+    },
+    {
+      "name": "m3u@proton.me.m3u",
+      "type": "m3u",
+      "size": 4700423,
+      "updated": "2026-04-09T05:14:39.031Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-04-09T05:12:43.277Z"
+      "updated": "2026-04-09T05:14:56.481Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-04-09T05:12:43.487Z"
+      "updated": "2026-04-09T05:14:56.542Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-04-09T05:12:43.859Z"
+      "updated": "2026-04-09T05:14:56.716Z"
     }
   ]
 }
