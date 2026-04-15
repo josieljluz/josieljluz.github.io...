@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T05:27:33.195Z",
-    "next_update": "2026-04-15T05:27:33.195Z",
+    "generated_at": "2026-04-15T05:27:41.334Z",
+    "next_update": "2026-04-16T05:27:41.334Z",
     "m3u_count": 6,
     "epg_count": 3,
     "total_files": 9
@@ -10,56 +10,56 @@
     {
       "name": "epgbrasil.m3u",
       "type": "m3u",
-      "size": 639053,
-      "updated": "2026-04-14T05:27:25.038Z"
+      "size": 1930609,
+      "updated": "2026-04-15T05:27:33.069Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
-      "size": 775102,
-      "updated": "2026-04-14T05:27:26.172Z"
+      "size": 1277507,
+      "updated": "2026-04-15T05:27:34.713Z"
     },
     {
       "name": "epgbrasilportugal.m3u",
       "type": "m3u",
-      "size": 2321344,
-      "updated": "2026-04-14T05:27:27.471Z"
+      "size": 590928,
+      "updated": "2026-04-15T05:27:35.902Z"
     },
     {
       "name": "epgbrasilportugal.xml.gz",
       "type": "epg",
-      "size": 782898,
-      "updated": "2026-04-14T05:27:28.795Z"
+      "size": 235903,
+      "updated": "2026-04-15T05:27:37.432Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
       "size": 2262699,
-      "updated": "2026-04-14T05:27:29.869Z"
+      "updated": "2026-04-15T05:27:38.540Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
-      "size": 332945,
-      "updated": "2026-04-14T05:27:31.203Z"
+      "size": 331937,
+      "updated": "2026-04-15T05:27:39.713Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-04-14T05:27:31.470Z"
+      "updated": "2026-04-15T05:27:40.096Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-04-14T05:27:31.621Z"
+      "updated": "2026-04-15T05:27:40.313Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-04-14T05:27:31.897Z"
+      "updated": "2026-04-15T05:27:40.684Z"
     }
   ]
 }
