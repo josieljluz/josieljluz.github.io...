@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-04-25T05:15:13.490Z",
-    "next_update": "2026-04-26T05:15:13.490Z",
+    "generated_at": "2026-04-27T05:57:13.472Z",
+    "next_update": "2026-04-28T05:57:13.472Z",
     "m3u_count": 6,
     "epg_count": 3,
     "total_files": 9
@@ -11,55 +11,55 @@
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 1930609,
-      "updated": "2026-04-25T05:15:07.018Z"
+      "updated": "2026-04-27T05:57:07.073Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
-      "size": 2183920,
-      "updated": "2026-04-25T05:15:08.136Z"
+      "size": 2994103,
+      "updated": "2026-04-27T05:57:08.364Z"
     },
     {
       "name": "epgbrasilportugal.m3u",
       "type": "m3u",
-      "size": 590928,
-      "updated": "2026-04-25T05:15:09.089Z"
+      "size": 368601,
+      "updated": "2026-04-27T05:57:09.507Z"
     },
     {
       "name": "epgbrasilportugal.xml.gz",
       "type": "epg",
-      "size": 403700,
-      "updated": "2026-04-25T05:15:10.267Z"
+      "size": 694297,
+      "updated": "2026-04-27T05:57:10.582Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
       "size": 2262699,
-      "updated": "2026-04-25T05:15:11.362Z"
+      "updated": "2026-04-27T05:57:11.761Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
-      "size": 1123925,
-      "updated": "2026-04-25T05:15:12.540Z"
+      "size": 1905440,
+      "updated": "2026-04-27T05:57:12.915Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-04-25T05:15:12.920Z"
+      "updated": "2026-04-27T05:57:13.104Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-04-25T05:15:13.090Z"
+      "updated": "2026-04-27T05:57:13.197Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-04-25T05:15:13.380Z"
+      "updated": "2026-04-27T05:57:13.369Z"
     }
   ]
 }
