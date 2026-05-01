@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-04-27T05:57:13.472Z",
-    "next_update": "2026-04-28T05:57:13.472Z",
+    "generated_at": "2026-05-01T06:17:51.871Z",
+    "next_update": "2026-05-02T06:17:51.871Z",
     "m3u_count": 6,
     "epg_count": 3,
     "total_files": 9
@@ -11,55 +11,55 @@
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 1930609,
-      "updated": "2026-04-27T05:57:07.073Z"
+      "updated": "2026-05-01T06:17:44.723Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
-      "size": 2994103,
-      "updated": "2026-04-27T05:57:08.364Z"
+      "size": 2912044,
+      "updated": "2026-05-01T06:17:45.825Z"
     },
     {
       "name": "epgbrasilportugal.m3u",
       "type": "m3u",
       "size": 368601,
-      "updated": "2026-04-27T05:57:09.507Z"
+      "updated": "2026-05-01T06:17:47.107Z"
     },
     {
       "name": "epgbrasilportugal.xml.gz",
       "type": "epg",
-      "size": 694297,
-      "updated": "2026-04-27T05:57:10.582Z"
+      "size": 640199,
+      "updated": "2026-05-01T06:17:48.106Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
       "size": 2262699,
-      "updated": "2026-04-27T05:57:11.761Z"
+      "updated": "2026-05-01T06:17:49.171Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
-      "size": 1905440,
-      "updated": "2026-04-27T05:57:12.915Z"
+      "size": 1887946,
+      "updated": "2026-05-01T06:17:50.381Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-04-27T05:57:13.104Z"
+      "updated": "2026-05-01T06:17:50.579Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-04-27T05:57:13.197Z"
+      "updated": "2026-05-01T06:17:50.648Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-04-27T05:57:13.369Z"
+      "updated": "2026-05-01T06:17:50.876Z"
     }
   ]
 }
