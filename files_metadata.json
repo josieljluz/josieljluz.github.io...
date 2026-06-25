@@ -1,29 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-06-25T06:50:26.578Z",
-    "next_update": "2026-06-26T06:50:26.578Z",
-    "m3u_count": 3,
+    "generated_at": "2026-06-25T06:51:54.878Z",
+    "next_update": "2026-06-26T06:51:54.878Z",
+    "m3u_count": 5,
     "epg_count": 0,
-    "total_files": 3
+    "total_files": 5
   },
   "files": [
+    {
+      "name": "PiauiTV.m3u",
+      "type": "m3u",
+      "size": 76895,
+      "updated": "2026-06-25T06:51:46.136Z"
+    },
+    {
+      "name": "m3u@proton.me.m3u",
+      "type": "m3u",
+      "size": 4700423,
+      "updated": "2026-06-25T06:51:46.146Z"
+    },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-06-25T06:50:26.227Z"
+      "updated": "2026-06-25T06:51:54.456Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-06-25T06:50:26.285Z"
+      "updated": "2026-06-25T06:51:54.513Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-06-25T06:50:26.456Z"
+      "updated": "2026-06-25T06:51:54.691Z"
     }
   ]
 }
