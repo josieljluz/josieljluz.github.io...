@@ -1,65 +1,53 @@
 {
   "metadata": {
-    "generated_at": "2026-07-16T05:44:31.128Z",
-    "next_update": "2026-07-17T05:44:31.128Z",
-    "m3u_count": 7,
+    "generated_at": "2026-07-17T05:44:26.866Z",
+    "next_update": "2026-07-18T05:44:26.866Z",
+    "m3u_count": 5,
     "epg_count": 2,
-    "total_files": 9
+    "total_files": 7
   },
   "files": [
-    {
-      "name": "PiauiTV.m3u",
-      "type": "m3u",
-      "size": 76895,
-      "updated": "2026-07-16T05:44:12.706Z"
-    },
     {
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 575464,
-      "updated": "2026-07-16T05:44:24.214Z"
+      "updated": "2026-07-17T05:44:21.181Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
       "size": 60073,
-      "updated": "2026-07-16T05:44:25.406Z"
+      "updated": "2026-07-17T05:44:22.390Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
       "size": 1972481,
-      "updated": "2026-07-16T05:44:26.955Z"
+      "updated": "2026-07-17T05:44:24.493Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
       "size": 449509,
-      "updated": "2026-07-16T05:44:28.251Z"
-    },
-    {
-      "name": "m3u@proton.me.m3u",
-      "type": "m3u",
-      "size": 4700423,
-      "updated": "2026-07-16T05:44:12.721Z"
+      "updated": "2026-07-17T05:44:25.846Z"
     },
     {
       "name": "playlist.m3u",
       "type": "m3u",
       "size": 8122,
-      "updated": "2026-07-16T05:44:28.515Z"
+      "updated": "2026-07-17T05:44:26.124Z"
     },
     {
       "name": "playlists.m3u",
       "type": "m3u",
       "size": 107597,
-      "updated": "2026-07-16T05:44:28.662Z"
+      "updated": "2026-07-17T05:44:26.303Z"
     },
     {
       "name": "pornstars.m3u",
       "type": "m3u",
       "size": 100468,
-      "updated": "2026-07-16T05:44:28.969Z"
+      "updated": "2026-07-17T05:44:26.640Z"
     }
   ]
 }
