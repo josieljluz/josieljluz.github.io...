@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-09-26T08:26:37.553Z",
-    "next_update": "2026-09-27T08:26:37.553Z",
+    "generated_at": "2026-09-27T09:02:43.159Z",
+    "next_update": "2026-09-28T09:02:43.159Z",
     "m3u_count": 2,
     "epg_count": 2,
     "total_files": 4
@@ -11,25 +11,25 @@
       "name": "epgbrasil.m3u",
       "type": "m3u",
       "size": 575464,
-      "updated": "2026-09-26T08:26:32.231Z"
+      "updated": "2026-09-27T09:02:37.026Z"
     },
     {
       "name": "epgbrasil.xml.gz",
       "type": "epg",
       "size": 60073,
-      "updated": "2026-09-26T08:26:33.507Z"
+      "updated": "2026-09-27T09:02:38.348Z"
     },
     {
       "name": "epgportugal.m3u",
       "type": "m3u",
       "size": 1972481,
-      "updated": "2026-09-26T08:26:35.200Z"
+      "updated": "2026-09-27T09:02:40.549Z"
     },
     {
       "name": "epgportugal.xml.gz",
       "type": "epg",
       "size": 449509,
-      "updated": "2026-09-26T08:26:36.941Z"
+      "updated": "2026-09-27T09:02:42.198Z"
     }
   ]
 }
